@@ -1,10 +1,9 @@
-using UnityEngine;
 
 public class StoneCountState : GameStateBase
 {
     bool isGameEnd;
 
-    public StoneCountState(bool _isGameend = false) => isGameEnd = _isGameend;
+    public StoneCountState(bool _isGameEnd = false) => isGameEnd = _isGameEnd;
     public override void Enter()
     {
         int blackCount = 0;

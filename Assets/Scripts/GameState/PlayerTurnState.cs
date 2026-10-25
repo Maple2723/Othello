@@ -30,7 +30,7 @@ public class PlayerTurnState : GameStateBase
     }
     public override void Exit()
     {
-        GameManager.Instance.ResetHighLightCells();
+        GameManager.Instance.ResetHighlightCells();
         StoneManager.Instance.DestroyNpcHighlightCell();
     }
 }

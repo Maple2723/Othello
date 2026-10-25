@@ -1,4 +1,7 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// 勝ち負けの判定を行うクラス
@@ -20,6 +23,14 @@ public class WinnerCheckState : GameStateBase
         else
         {
             Debug.Log("引き分け" + "黒：" + blackCount + " | 白：" + whiteCount);
+        }
+    }
+
+    public override void Update()
+    {
+        if (Mouse.current.rightButton.wasPressedThisFrame)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 

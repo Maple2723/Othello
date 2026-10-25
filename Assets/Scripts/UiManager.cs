@@ -1,16 +1,13 @@
 using Cysharp.Threading.Tasks;
-using System;
-using System.Drawing;
 using TMPro;
 using UnityEngine;
-using static Unity.Collections.AllocatorManager;
 
 public class UiManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI blackCountText;
     [SerializeField] private TextMeshProUGUI whiteCountText;
     [SerializeField] private TextMeshProUGUI turnText;
-    [SerializeField] private TextMeshProUGUI pathText;
+    [SerializeField] private TextMeshProUGUI passText;
 
     public static UiManager Instance { get; private set; }
     void Awake()
@@ -20,12 +17,7 @@ public class UiManager : MonoBehaviour
             Instance = this;
             return;
         }
-        Destroy(this);
-    }
-
-    void Update()
-    {
-        
+        Destroy(gameObject);
     }
 
     public void UpdateStoneCountText()
@@ -48,8 +40,8 @@ public class UiManager : MonoBehaviour
             whiteText += " <color=white><size=70%>YOU</size><size=60%> (white)    </size></color>";
         }
 
-        blackCountText.text = blackText+="<size=130%>"+GameManager.Instance.blackStoneCount.ToString()+"</size >";
-        whiteCountText.text = whiteText+="<size=130%>"+GameManager.Instance.whiteStoneCount.ToString()+"</size >";
+        blackCountText.text = $"{blackText}<size=130%>{GameManager.Instance.blackStoneCount}</size>";
+        whiteCountText.text = $"{whiteText}<size=130%>{GameManager.Instance.whiteStoneCount}</size>";
     }
 
     public void UpdateTurnText()
@@ -68,7 +60,7 @@ public class UiManager : MonoBehaviour
             enemyTurnColor = " <color=black><size=200%>●</size></color>";
         }
 
-        if (GameManager.Instance.currenTurn == GameManager.Instance.playerTurn)
+        if (GameManager.Instance.currentTurn == GameManager.Instance.playerTurn)
         {
             turnText.text = playerTurnColor + "<size=120%>Your turn</size>";
         }
@@ -79,12 +71,12 @@ public class UiManager : MonoBehaviour
         
     }
 
-    public async UniTaskVoid ShowPathTextAsync()
+    public async UniTaskVoid ShowPassTextAsync()
     {
-        pathText.text = "Path";
+        passText.text = "Pass";
 
         await UniTask.Delay(500);
 
-        pathText.text = "";
+        passText.text = "";
     }
 }

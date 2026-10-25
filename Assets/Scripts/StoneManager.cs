@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UIElements;
+﻿using UnityEngine;
 
 /// <summary>
 /// オセロの石の生成や裏返しなどを行うクラス
@@ -14,7 +12,7 @@ public class StoneManager : MonoBehaviour
     }
 
     [SerializeField] private GameObject stonePrefab;
-    [SerializeField] private GameObject playerHightlightCellPrefab;
+    [SerializeField] private GameObject playerHighlightCellPrefab;
     [SerializeField] private GameObject npcHighlightCellPrefab;
     public GameObject npcHighlightCell;
 
@@ -58,7 +56,7 @@ public class StoneManager : MonoBehaviour
     }
 
     /// <summary> 指定された座標の石を裏返すメソッド </summary>
-    /// <param name="_positions"> 裏返す盤面座標配列 </param>
+    /// <param name="_position"> 裏返す盤面座標 </param>
     public void FlipStone(Vector2Int _position)
     {
         int _x = _position.x;
@@ -74,8 +72,8 @@ public class StoneManager : MonoBehaviour
     {
         Vector3 position = new Vector3(_x, 0, _y) + STONE_DEFAULT_POS;
 
-        GameObject putHighlightCell = Instantiate(playerHightlightCellPrefab, position, Quaternion.identity);
-        GameManager.Instance.highLightCells[_x, _y] = putHighlightCell;
+        GameObject putHighlightCell = Instantiate(playerHighlightCellPrefab, position, Quaternion.identity);
+        GameManager.Instance.highlightCells[_x, _y] = putHighlightCell;
     }
 
     public void NpcHighlightPlaceCell(Vector2Int _position)
@@ -87,6 +85,7 @@ public class StoneManager : MonoBehaviour
 
     public void DestroyNpcHighlightCell()
     {
+        if(npcHighlightCell != null)
         Destroy(npcHighlightCell);
     }
 }

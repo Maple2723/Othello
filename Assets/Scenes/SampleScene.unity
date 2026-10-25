@@ -609,7 +609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StoneManager
   stonePrefab: {fileID: 1652269221420703237, guid: 2b3e38123ab7d5345b29fc559862d69d, type: 3}
-  playerHightlightCellPrefab: {fileID: 7420079261781443769, guid: 5e14ef257f314c847954d61550f98151, type: 3}
+  playerHighlightCellPrefab: {fileID: 7420079261781443769, guid: 5e14ef257f314c847954d61550f98151, type: 3}
   npcHighlightCellPrefab: {fileID: 1517666727279758646, guid: d54ab23d5ef684941ade8895d420c4cd, type: 3}
   npcHighlightCell: {fileID: 0}
 --- !u!1 &627205587
@@ -1075,7 +1075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90af8b4fe90f85f48a329d14c6876c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  currenTurn: 0
+  currentTurn: 0
   playerTurn: 0
   turnCount: 0
   blackStoneCount: 0
@@ -1479,7 +1479,7 @@ MonoBehaviour:
   blackCountText: {fileID: 627205589}
   whiteCountText: {fileID: 1739127116}
   turnText: {fileID: 2141569638}
-  pathText: {fileID: 1014844417}
+  passText: {fileID: 0}
 --- !u!1 &2067200336
 GameObject:
   m_ObjectHideFlags: 0
