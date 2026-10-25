@@ -1,0 +1,4589 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &740667858790571640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8936257826818805191}
+  - component: {fileID: 2101779914239191409}
+  - component: {fileID: 2530535373176315346}
+  - component: {fileID: 9007086840507411341}
+  m_Layer: 2
+  m_Name: BoardFrame1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8936257826818805191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740667858790571640}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5125, y: 0.100000024, z: 0}
+  m_LocalScale: {x: 0.025, y: 1.2, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1803074220440400066}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2101779914239191409
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740667858790571640}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &2530535373176315346
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740667858790571640}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 33ef9824c1e62334bbbe6d4626300786, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9007086840507411341
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740667858790571640}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &907865957812259492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1803074220440400066}
+  m_Layer: 2
+  m_Name: BoardFrames
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1803074220440400066
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907865957812259492}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.51, y: 0.39, z: -3.57}
+  m_LocalScale: {x: 8, y: 0.5, z: 8}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8936257826818805191}
+  - {fileID: 998446539092899235}
+  - {fileID: 110115941970412719}
+  - {fileID: 4817513194450035951}
+  m_Father: {fileID: 5600007282845043000}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &924809985795203661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 110115941970412719}
+  - component: {fileID: 403844136298571822}
+  - component: {fileID: 586200467456627695}
+  - component: {fileID: 8453699768546781114}
+  m_Layer: 2
+  m_Name: BoardFrame3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &110115941970412719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924809985795203661}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.100000024, z: -0.5}
+  m_LocalScale: {x: 1.05, y: 1.2, z: 0.025}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1803074220440400066}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &403844136298571822
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924809985795203661}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &586200467456627695
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924809985795203661}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 33ef9824c1e62334bbbe6d4626300786, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8453699768546781114
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924809985795203661}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &3161705531030866830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 248016980889564742}
+  m_Layer: 2
+  m_Name: Bords
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &248016980889564742
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3161705531030866830}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4184891028970814865}
+  - {fileID: 1796477897411763653}
+  - {fileID: 2368289325198753614}
+  - {fileID: 230353508062148188}
+  - {fileID: 2600304510354798802}
+  - {fileID: 3806849929193145043}
+  - {fileID: 8553679115658639033}
+  - {fileID: 6475679195302237640}
+  - {fileID: 6931976634534227030}
+  - {fileID: 8803478746817808435}
+  - {fileID: 2183984534877533425}
+  - {fileID: 3230565644393649657}
+  - {fileID: 8185963779960976684}
+  - {fileID: 1395773582045733749}
+  - {fileID: 3642014798501877580}
+  - {fileID: 1545764478164949566}
+  - {fileID: 4385761088098670917}
+  - {fileID: 856237562656242170}
+  - {fileID: 5994642294106140579}
+  - {fileID: 8863851168064894175}
+  - {fileID: 469932222281514164}
+  - {fileID: 1125512057189673780}
+  - {fileID: 7561878018140582500}
+  - {fileID: 1714970033231604178}
+  - {fileID: 7471979746389931718}
+  - {fileID: 3791564064842720143}
+  - {fileID: 2357948716285029784}
+  - {fileID: 790656903993166674}
+  - {fileID: 5430347058619444593}
+  - {fileID: 2967673508530372617}
+  - {fileID: 4458565064078657557}
+  - {fileID: 2958576213288313256}
+  - {fileID: 8698357817439681867}
+  - {fileID: 1395334074626584171}
+  - {fileID: 5344984409049498815}
+  - {fileID: 4230532959254437340}
+  - {fileID: 865758609872754456}
+  - {fileID: 7127208099548129177}
+  - {fileID: 5194389877977867188}
+  - {fileID: 5327237545083101260}
+  - {fileID: 1069901148572811824}
+  - {fileID: 6163422371969896216}
+  - {fileID: 4904666350345363890}
+  - {fileID: 6113521370541993304}
+  - {fileID: 2390422928218171213}
+  - {fileID: 2813345615490124808}
+  - {fileID: 5031399335132453968}
+  - {fileID: 4768099577790690396}
+  - {fileID: 2093130484776972402}
+  - {fileID: 4875659390346665525}
+  - {fileID: 2027929666012668021}
+  - {fileID: 5974155609986489320}
+  - {fileID: 7874664686343388309}
+  - {fileID: 5954249926115043563}
+  - {fileID: 4452766137666310851}
+  - {fileID: 5498309613532729652}
+  - {fileID: 4452295651512875884}
+  - {fileID: 8465760420919728483}
+  - {fileID: 2296511365715114731}
+  - {fileID: 6717689869970888387}
+  - {fileID: 5277977358274725167}
+  - {fileID: 3423680789738049556}
+  - {fileID: 228676604267933946}
+  - {fileID: 241748517310072318}
+  m_Father: {fileID: 5600007282845043000}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3849568416777486084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5600007282845043000}
+  m_Layer: 2
+  m_Name: OthelloBoards
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5600007282845043000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3849568416777486084}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1803074220440400066}
+  - {fileID: 248016980889564742}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4785009843413598801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4817513194450035951}
+  - component: {fileID: 2540308391156337654}
+  - component: {fileID: 5900994121798162668}
+  - component: {fileID: 4034934251877078176}
+  m_Layer: 2
+  m_Name: BoardFrame4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4817513194450035951
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4785009843413598801}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.100000024, z: 0.5125}
+  m_LocalScale: {x: 1.05, y: 1.2, z: 0.025}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1803074220440400066}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2540308391156337654
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4785009843413598801}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &5900994121798162668
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4785009843413598801}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 33ef9824c1e62334bbbe6d4626300786, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4034934251877078176
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4785009843413598801}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &6116273000865765408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 998446539092899235}
+  - component: {fileID: 507206081286198887}
+  - component: {fileID: 791096346799657406}
+  - component: {fileID: 6229295525976263553}
+  m_Layer: 2
+  m_Name: BoardFrame2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &998446539092899235
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6116273000865765408}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.5125, y: 0.100000024, z: 0}
+  m_LocalScale: {x: 0.025, y: 1.2, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1803074220440400066}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &507206081286198887
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6116273000865765408}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &791096346799657406
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6116273000865765408}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 33ef9824c1e62334bbbe6d4626300786, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6229295525976263553
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6116273000865765408}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &21121208867946554
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &865758609872754456 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 21121208867946554}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &185155644255999250
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &1069901148572811824 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 185155644255999250}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &276509850405125142
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &1125512057189673780 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 276509850405125142}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &481948094700166256
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &790656903993166674 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 481948094700166256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &552030669354970840
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &856237562656242170 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 552030669354970840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &778361474273242006
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &469932222281514164 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 778361474273242006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1085965095407719132
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &241748517310072318 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 1085965095407719132}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1109204192958588888
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &228676604267933946 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 1109204192958588888}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1115382207480963454
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &230353508062148188 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 1115382207480963454}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1183430992318691159
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &2027929666012668021 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 1183430992318691159}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1244269380554106704
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &2093130484776972402 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 1244269380554106704}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1299236962438013907
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &2183984534877533425 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 1299236962438013907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1411345863034678729
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &2296511365715114731 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 1411345863034678729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1488048662745385703
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9200001
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.9200001
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &1796477897411763653 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 1488048662745385703}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1818165504356830492
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &1545764478164949566 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 1818165504356830492}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1982726599774781168
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &1714970033231604178 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 1982726599774781168}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2239972970286233929
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &1395334074626584171 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 2239972970286233929}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2239990866700366935
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &1395773582045733749 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 2239990866700366935}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2350180990033625819
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &3230565644393649657 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 2350180990033625819}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2579323399127222070
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &3423680789738049556 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 2579323399127222070}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2685898114548037258
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &2958576213288313256 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 2685898114548037258}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2695272624031061803
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &2967673508530372617 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 2695272624031061803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2909009052437950448
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &2600304510354798802 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 2909009052437950448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3117548194457688874
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &2813345615490124808 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 3117548194457688874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3212502398600521836
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &2368289325198753614 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 3212502398600521836}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3238614401229486778
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &2357948716285029784 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 3238614401229486778}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3270949795486380143
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &2390422928218171213 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 3270949795486380143}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3500872544060477031
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &4385761088098670917 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 3500872544060477031}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3567264529589890126
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &4452295651512875884 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 3567264529589890126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3567875972273505761
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &4452766137666310851 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 3567875972273505761}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3578323429874376503
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &4458565064078657557 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 3578323429874376503}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3916859854944774835
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &4184891028970814865 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 3916859854944774835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3962354244531505918
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &4230532959254437340 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 3962354244531505918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4079248240870544881
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &3806849929193145043 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 4079248240870544881}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4095623722233803949
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &3791564064842720143 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 4095623722233803949}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4522680927936381038
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &3642014798501877580 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 4522680927936381038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4613137410665301526
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &5498309613532729652 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 4613137410665301526}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4926636092259562646
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &5194389877977867188 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 4926636092259562646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5005723563563127309
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &5277977358274725167 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 5005723563563127309}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5018950812994631534
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &5327237545083101260 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 5018950812994631534}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5072724981442089885
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &5344984409049498815 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 5072724981442089885}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5121917267619609171
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &5430347058619444593 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 5121917267619609171}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5212955539190527632
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &4904666350345363890 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 5212955539190527632}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5304075391576198002
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &5031399335132453968 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 5304075391576198002}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5648483923011429246
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &4768099577790690396 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 5648483923011429246}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5755900614237718807
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &4875659390346665525 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 5755900614237718807}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5868968934314885601
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &6717689869970888387 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 5868968934314885601}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6167390062425015018
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &6475679195302237640 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 6167390062425015018}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6385915385200556666
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &6113521370541993304 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 6385915385200556666}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6467200414885910586
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &6163422371969896216 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 6467200414885910586}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6818649539794717898
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &5974155609986489320 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 6818649539794717898}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6839135755554865097
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &5954249926115043563 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 6839135755554865097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6879807090270156929
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &5994642294106140579 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 6879807090270156929}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6989778700127562679
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &7874664686343388309 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 6989778700127562679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7258092313134769478
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &7561878018140582500 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 7258092313134769478}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7780265789160071652
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &7471979746389931718 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 7780265789160071652}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7817008134274612084
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &6931976634534227030 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 7817008134274612084}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7971421366088167611
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &7127208099548129177 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 7971421366088167611}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8430181220109085289
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &8698357817439681867 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 8430181220109085289}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8531223118247124753
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &8803478746817808435 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 8531223118247124753}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8595817883082089469
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &8863851168064894175 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 8595817883082089469}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8733798271472225857
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &8465760420919728483 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 8733798271472225857}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8861965489123631515
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &8553679115658639033 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 8861965489123631515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9066486919234789902
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 248016980889564742}
+    m_Modifications:
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266235172154577288, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+      propertyPath: m_Name
+      value: OthelloBord
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+--- !u!4 &8185963779960976684 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 885172276025005858, guid: 400b77b69d8fd61419b9df475ce81d88, type: 3}
+  m_PrefabInstance: {fileID: 9066486919234789902}
+  m_PrefabAsset: {fileID: 0}
