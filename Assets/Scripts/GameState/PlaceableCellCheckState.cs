@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
 
 /// <summary>
 /// 置けるマスのハイライト、勝ち負け判定等を行うクラス
@@ -33,13 +32,13 @@ public class PlaceableCellCheckState : GameStateBase
 
     public override void Exit() { }
 
-    /// <summary> 盤面上のおけるマスを調べるメソッド </summary>
+    /// <summary> 盤面上の置けるマスを調べるメソッド </summary>
     private void FindPlaceableCells()
     {
         // 変数のコピー
         int boardSize = GameManager.BOARD_SIZE;
         int[,] boardData = GameManager.Instance.boardData;
-        var currentTurn = GameManager.Instance.currenTurn;
+        var currentTurn = GameManager.Instance.currentTurn;
         var playerTurn = GameManager.Instance.playerTurn;
 
         // 置けるマスを調べる
@@ -92,7 +91,7 @@ public class PlaceableCellCheckState : GameStateBase
     private void TurnChanging()
     {
         // 変数のコピー
-        var currentTurn = GameManager.Instance.currenTurn;
+        var currentTurn = GameManager.Instance.currentTurn;
         var playerTurn = GameManager.Instance.playerTurn;
 
         // 2回目連続で見つからなかったら終了
@@ -108,7 +107,7 @@ public class PlaceableCellCheckState : GameStateBase
                 // 手番を相手に切り替える
                 currentTurn = currentTurn == GameManager.TurnState.Black ? GameManager.TurnState.White : GameManager.TurnState.Black;
 
-                GameManager.Instance.currenTurn = currentTurn;
+                GameManager.Instance.currentTurn = currentTurn;
                 GameManager.Instance.isPassed = true;
 
 
@@ -119,7 +118,7 @@ public class PlaceableCellCheckState : GameStateBase
                 // 相手の置けるマスを再検索
                 FindPlaceableCells();
                 if (placeableCellCount != 0)
-                    UiManager.Instance.ShowPathTextAsync().Forget();
+                    UiManager.Instance.ShowPassTextAsync().Forget();
                 return;
             }
         }

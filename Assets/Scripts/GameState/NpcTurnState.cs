@@ -24,7 +24,7 @@ public class NpcTurnState : GameStateBase
         int rand = Random.Range(0, placeableCells.Count);
         Vector2Int putPosition = placeableCells[rand];
 
-        StoneManager.Instance.CreateStone(putPosition, (StoneManager.StoneType)GameManager.Instance.currenTurn);
+        StoneManager.Instance.CreateStone(putPosition, (StoneManager.StoneType)GameManager.Instance.currentTurn);
         StoneManager.Instance.NpcHighlightPlaceCell(putPosition);
 
         manager.ChangeState(new ReverseStoneState(putPosition));

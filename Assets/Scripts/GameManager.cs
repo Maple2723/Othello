@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     /// <summary> 盤面に置かれている石を保持 </summary>
     public GameObject[,]stoneData = new GameObject[BOARD_SIZE, BOARD_SIZE]; 
     /// <summary> 盤面上でハイライトするマスを保持 </summary>
-    public GameObject[,] highLightCells = new GameObject[BOARD_SIZE, BOARD_SIZE];
+    public GameObject[,] highlightCells = new GameObject[BOARD_SIZE, BOARD_SIZE];
     #endregion
 
     /* ----- ゲーム内処理用変数 ----- */
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
         White
     }
     /// <summary> 現在のターン状態 </summary>
-    public TurnState currenTurn;
+    public TurnState currentTurn;
     /// <summary> プレイヤーがどちらのターンか </summary>
     public TurnState playerTurn;
     /// <summary> ターン経過数 </summary>
@@ -76,19 +76,19 @@ public class GameManager : MonoBehaviour
     {
         // 盤面データやターン状態等を初期化
         boardData = (int[,])INITIAL_BOARD_DATA.Clone();
-        currenTurn = TurnState.Black;
+        currentTurn = TurnState.Black;
         playerTurn = TurnState.None;
         turnCount = 0;
         blackStoneCount = 2;
         whiteStoneCount = 2;
     }
 
-    public void ResetHighLightCells()
+    public void ResetHighlightCells()
     {
-        foreach (GameObject cell in highLightCells)
+        foreach (GameObject cell in highlightCells)
         {
             if (cell != null) Destroy(cell);
         }
-        highLightCells = new GameObject[BOARD_SIZE, BOARD_SIZE];
+        highlightCells = new GameObject[BOARD_SIZE, BOARD_SIZE];
     }
 }

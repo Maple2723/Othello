@@ -64,7 +64,7 @@ public class ReverseStoneState : GameStateBase
         }
 
         // ターンを切り替える
-        GameManager.Instance.currenTurn = (GameManager.TurnState)(thisStone == 1 ? 2 : 1);
+        GameManager.Instance.currentTurn = (GameManager.TurnState)(thisStone == 1 ? 2 : 1);
         manager.ChangeState(new StoneCountState());
     }
 
