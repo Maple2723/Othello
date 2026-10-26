@@ -886,7 +886,7 @@ GameObject:
   - component: {fileID: 1014844418}
   - component: {fileID: 1014844417}
   m_Layer: 5
-  m_Name: PassText
+  m_Name: PathText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1479,7 +1479,7 @@ MonoBehaviour:
   blackCountText: {fileID: 627205589}
   whiteCountText: {fileID: 1739127116}
   turnText: {fileID: 2141569638}
-  passText: {fileID: 1014844417}
+  passText: {fileID: 0}
 --- !u!1 &2067200336
 GameObject:
   m_ObjectHideFlags: 0
