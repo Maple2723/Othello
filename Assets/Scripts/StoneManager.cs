@@ -41,16 +41,21 @@ public class StoneManager : MonoBehaviour
     {
         int _x = _position.x;
         int _y = _position.y;
-
         // 石の生成座標を決定
-        Vector3 position = new Vector3(_x, 0, _y) + STONE_DEFAULT_POS;
-        // 白なら角度を反対向きにする
-        Quaternion rotation = Quaternion.identity;
+        Vector3 position = new Vector3(_x, 0.5f, _y) + STONE_DEFAULT_POS;
+        GameObject putStone = Instantiate(stonePrefab, position, Quaternion.identity);
+
+        // 白なら反対向きにする
         if (_stoneType == StoneType.White)
         {
-            rotation = Quaternion.Euler(180f, 0f, 0f);
+            for (int i = 0; i < putStone.transform.childCount; i++)
+            {
+                Transform child = putStone.transform.GetChild(i);
+                Vector3 childPosition = child.localPosition;
+                childPosition.y *= -1f;
+                child.localPosition = childPosition;
+            }
         }
-        GameObject putStone = Instantiate(stonePrefab, position, rotation);
         GameManager.Instance.stoneData[_x, _y] = putStone;
         GameManager.Instance.boardData[_x, _y] = (int)_stoneType;
     }
