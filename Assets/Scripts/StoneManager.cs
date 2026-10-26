@@ -61,8 +61,18 @@ public class StoneManager : MonoBehaviour
     {
         int _x = _position.x;
         int _y = _position.y;
-        GameManager.Instance.stoneData[_x, _y].transform.rotation *= Quaternion.Euler(180f, 0f, 0f);
-        GameManager.Instance.boardData[_x, _y] = GameManager.Instance.boardData[_x, _y] == 1 ? 2 : 1;
+
+        Transform stone = GameManager.Instance.stoneData[_x, _y].transform;
+
+        foreach (Transform child in stone)
+        {
+            Vector3 scale = child.localScale;
+            scale.y *= -1;
+            child.localScale = scale;
+        }
+
+        GameManager.Instance.boardData[_x, _y] =
+            GameManager.Instance.boardData[_x, _y] == 1 ? 2 : 1;
     }
 
     /// <summary> 石を置けるマスにハイライトを表示するメソッド </summary>
