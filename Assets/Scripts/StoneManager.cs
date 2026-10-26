@@ -66,7 +66,8 @@ public class StoneManager : MonoBehaviour
     {
         int _x = _position.x;
         int _y = _position.y;
-        GameManager.Instance.stoneData[_x, _y].transform.rotation *= Quaternion.Euler(180f, 0f, 0f);
+
+        GameManager.Instance.stoneData[_x, _y].GetComponent<StoneController>().FlipStone(GameManager.Instance.boardData[_x, _y]);
         GameManager.Instance.boardData[_x, _y] = GameManager.Instance.boardData[_x, _y] == 1 ? 2 : 1;
     }
 
