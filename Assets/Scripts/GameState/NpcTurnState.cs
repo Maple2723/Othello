@@ -19,7 +19,7 @@ public class NpcTurnState : GameStateBase
 
     private async UniTaskVoid PlaceStoneAsync()
     {
-        await UniTask.Delay(500);
+        await UniTask.Delay(1500);
 
         int rand = Random.Range(0, placeableCells.Count);
         Vector2Int putPosition = placeableCells[rand];
