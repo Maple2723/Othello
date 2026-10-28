@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 /// <summary>
 /// オセロの石の生成や裏返しなどを行うクラス
@@ -42,20 +42,10 @@ public class StoneManager : MonoBehaviour
         int _x = _position.x;
         int _y = _position.y;
         // 石の生成座標を決定
-        Vector3 position = new Vector3(_x, 0.5f, _y) + STONE_DEFAULT_POS;
+        Vector3 position = new Vector3(_x, 0f, _y) + STONE_DEFAULT_POS;
         GameObject putStone = Instantiate(stonePrefab, position, Quaternion.identity);
 
-        // 白なら反対向きにする
-        if (_stoneType == StoneType.White)
-        {
-            for (int i = 0; i < putStone.transform.childCount; i++)
-            {
-                Transform child = putStone.transform.GetChild(i);
-                Vector3 childPosition = child.localPosition;
-                childPosition.y *= -1f;
-                child.localPosition = childPosition;
-            }
-        }
+        putStone.GetComponent<StoneController>().Initialize(_stoneType);
         GameManager.Instance.stoneData[_x, _y] = putStone;
         GameManager.Instance.boardData[_x, _y] = (int)_stoneType;
     }
