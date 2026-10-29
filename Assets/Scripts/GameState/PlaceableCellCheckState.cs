@@ -2,11 +2,11 @@
 using UnityEngine;
 
 /// <summary>
-/// 置けるマスのハイライト、勝ち負け判定等を行うクラス
+/// 配置可能なマスを探索して次の手番を決定するクラス
 /// </summary>
 public class PlaceableCellCheckState : GameStateBase
 {
-    private readonly Vector2Int[] directions =
+    private readonly Vector2Int[] directions =						 // 配置可否を調べる8方向の座標差分
     {
         new Vector2Int(-1, -1),
         new Vector2Int( 0, -1),
@@ -17,25 +17,24 @@ public class PlaceableCellCheckState : GameStateBase
         new Vector2Int( 0,  1),
         new Vector2Int( 1,  1)
     };
-
-    List<Vector2Int> npcPlaceableCells = new List<Vector2Int>();
-
-    int placeableCellCount;
+    List<Vector2Int> npcPlaceableCells = new List<Vector2Int>();	 // NPCの配置可能座標
+    int placeableCellCount;											 // 石を配置できるマスの数
 
     public override void Enter()
     {
         UiManager.Instance.UpdateStoneCountText();
 
-        // 置けるマスを調べてターンを進める
         FindPlaceableCells();
     }
 
-    public override void Exit() { }
+    public override void Exit()
+    {
+        UiManager.Instance.UpdateTurnText();
+    }
 
-    /// <summary> 盤面上の置けるマスを調べるメソッド </summary>
+    /// <summary> 配置可能なマスを調べてターンを進めるメソッド </summary>
     private void FindPlaceableCells()
     {
-        // 変数のコピー
         int boardSize = GameManager.BOARD_SIZE;
         int[,] boardData = GameManager.Instance.boardData;
         var currentTurn = GameManager.Instance.currentTurn;
@@ -52,14 +51,14 @@ public class PlaceableCellCheckState : GameStateBase
 
                 if (CanPlaceAt(putPosition, currentTurn))
                 {
-                    // 置けるマスが見つかったことを定義しておく
+                    // 置けるマスが見つかったら記録してパスに入らないようにする
                     placeableCellCount++;
                     GameManager.Instance.isPassed = false;
 
                     // プレイヤーのターンならハイライト、NPCのターンなら配置可能マスをリストに追加
                     if (currentTurn == playerTurn)
                     {
-                        StoneManager.Instance.PlayerHighlightPlaceableCell(x, y);
+                        StoneManager.Instance.PlayerHighlightPlaceableCell(new Vector2Int(x, y));
                     }
                     else
                     {
@@ -71,10 +70,52 @@ public class PlaceableCellCheckState : GameStateBase
         TurnChanging();
     }
 
-    /// <summary> 石が置けるかどうかを全方向調べるメソッド </summary>
-    /// <param name="_putPosition"> 石の座標 </param>
-    /// <param name="_currentTurn"> 現在のターン </param>
-    /// <returns> 石が置けるかどうか </returns>
+    /// <summary> 配置可能なマスの有無に応じてターンを進めるメソッド </summary>
+    private void TurnChanging()
+    {
+        var currentTurn = GameManager.Instance.currentTurn;
+        var playerTurn = GameManager.Instance.playerTurn;
+
+        // パスの場合
+        if (placeableCellCount == 0)
+        {
+            // 2連続パスの場合ゲームを終了する
+            if (GameManager.Instance.isPassed)
+            {
+                manager.ChangeState(new StoneCountState(true));
+                return;
+            }
+            // 手番を相手に切り替える
+            currentTurn = currentTurn == GameManager.TurnState.Black ? GameManager.TurnState.White : GameManager.TurnState.Black;
+            GameManager.Instance.currentTurn = currentTurn;
+
+            // 2連続パスの判定のためにフラグを立てる
+            GameManager.Instance.isPassed = true;
+
+            // 検索結果を初期化
+            npcPlaceableCells.Clear();
+
+            // 相手の置けるマスを再検索
+            FindPlaceableCells();
+            if (placeableCellCount != 0) UiManager.Instance.ShowPassTextAsync().Forget();
+
+            return;
+        }
+
+        // 置けるマスが見つかった場合は配置ターンへ移る
+        if (currentTurn == playerTurn)
+        {
+            manager.ChangeState(new PlayerTurnState());
+            return;
+        }
+
+        manager.ChangeState(new NpcTurnState(npcPlaceableCells));
+    }
+
+    /// <summary> 石を配置できるか全方向を調べて判定するメソッド </summary>
+    /// <param name="_putPosition"> 置いた石の盤面座標 </param>
+    /// <param name="_currentTurn"> 石を配置した時のターンの色 </param>
+    /// <returns> 置けるマスか否か </returns>
     private bool CanPlaceAt(Vector2Int _putPosition, GameManager.TurnState _currentTurn)
     {
         foreach (var direction in directions)
@@ -87,85 +128,35 @@ public class PlaceableCellCheckState : GameStateBase
         return false;
     }
 
-    /// <summary> ターン切り替えを行うメソッド </summary>
-    private void TurnChanging()
-    {
-        // 変数のコピー
-        var currentTurn = GameManager.Instance.currentTurn;
-        var playerTurn = GameManager.Instance.playerTurn;
-
-        // 2回目連続で見つからなかったら終了
-        if (placeableCellCount == 0)
-        {
-            if (GameManager.Instance.isPassed)
-            {
-                manager.ChangeState(new StoneCountState(true));
-                return;
-            }
-            else
-            {
-                // 手番を相手に切り替える
-                currentTurn = currentTurn == GameManager.TurnState.Black ? GameManager.TurnState.White : GameManager.TurnState.Black;
-
-                GameManager.Instance.currentTurn = currentTurn;
-                GameManager.Instance.isPassed = true;
-
-
-                // 検索結果を初期化
-                placeableCellCount = 0;
-                npcPlaceableCells.Clear();
-
-                // 相手の置けるマスを再検索
-                FindPlaceableCells();
-                if (placeableCellCount != 0)
-                    UiManager.Instance.ShowPassTextAsync().Forget();
-                return;
-            }
-        }
-
-        // 置けるマスが見つかった場合は配置ターンへ移る
-        if (currentTurn == playerTurn)
-        {
-            manager.ChangeState(new PlayerTurnState());
-        }
-        else
-        {
-            manager.ChangeState(new NpcTurnState(npcPlaceableCells));
-        }
-
-        UiManager.Instance.UpdateTurnText();
-        GameManager.Instance.turnCount++;
-    }
-
-    /// <summary> 石を置けるかどうかを調べるメソッド </summary>
-    /// <param name="_position"> 石の位置 </param>
+    /// <summary> 相手の石を挟めるか判定するメソッド </summary>
+    /// <param name="_position"> 配置した石の盤面座標 </param>
     /// <param name="_direction"> 探索方向 </param>
-    /// <param name="_currentTurn">現在のターン。</param>
-    /// <returns> 置けるマスかどうか </returns>
+    /// <param name="_currentTurn"> 配置する石の色 </param>
+    /// <returns> 石を挟める場合はTRUE </returns>
     private bool SearchDirection(Vector2Int _position, Vector2Int _direction, GameManager.TurnState _currentTurn)
     {
-        // 変数のコピー
         int boardSize = GameManager.BOARD_SIZE;
         int[,] boardData = GameManager.Instance.boardData;
 
-        // 現在のターンを基に自分の色と相手の色を判定
         int myStone = (int)_currentTurn;
-        int opponentStone = myStone == 1 ? 2 : 1;
+        int opponentStone = myStone == (int)GameManager.TurnState.Black ? (int)GameManager.TurnState.White : (int)GameManager.TurnState.Black;
 
-        // 次のマスの座標を計算
+        // 検索する方向の座標
         int nextX = _position.x + _direction.x;
         int nextY = _position.y + _direction.y;
 
-        // 盤面外、または相手の石が周りに存在しない場合は処理を抜ける
+        // 盤面外、または相手の石が周りに存在しない
         if (nextX < 0 || nextX >= boardSize || nextY < 0 || nextY >= boardSize || boardData[nextX, nextY] != opponentStone)
             return false;
 
-        // 相手の石が続く間、次のマスを調べてその先に自分の石が存在すれば有効
+        // 盤面内で相手の石が続いておかれている場合は探索を進める
         while (nextX >= 0 && nextX < boardSize && nextY >= 0 && nextY < boardSize && boardData[nextX, nextY] == opponentStone)
         {
             nextX += _direction.x;
             nextY += _direction.y;
         }
+
+        // 探索してその先に自分の石があったらTRUE
         return nextX >= 0 && nextX < boardSize && nextY >= 0 && nextY < boardSize && boardData[nextX, nextY] == myStone;
     }
 }

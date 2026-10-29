@@ -1,18 +1,15 @@
 ﻿using UnityEngine;
 
 /// <summary>
-/// ゲームの状態を管理するクラス
+/// 盤面と手番を管理するクラス
 /// </summary>
 public class GameManager : MonoBehaviour
 {
     /* ----- 盤面データ変数 ----- */
     #region
-    /// <summary> 盤面のサイズ </summary>
-    public const int BOARD_SIZE = 8;
-    /// <summary> 盤面データ </summary>
-    public int[,] boardData = new int[BOARD_SIZE, BOARD_SIZE];
-    /// <summary> 初期盤面データ </summary>
-    public readonly int[,] INITIAL_BOARD_DATA =
+    public const int BOARD_SIZE = 8;												 // 盤面のサイズ
+    public int[,] boardData = new int[BOARD_SIZE, BOARD_SIZE];						 // 盤面データ
+    public readonly int[,] INITIAL_BOARD_DATA =										 // 開始時の盤面データ
     {
         { 0, 0, 0, 0, 0, 0, 0, 0 },
         { 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -23,10 +20,8 @@ public class GameManager : MonoBehaviour
         { 0, 0, 0, 0, 0, 0, 0, 0 },
         { 0, 0, 0, 0, 0, 0, 0, 0 }
     };
-    /// <summary> 盤面に置かれている石を保持 </summary>
-    public GameObject[,]stoneData = new GameObject[BOARD_SIZE, BOARD_SIZE]; 
-    /// <summary> 盤面上でハイライトするマスを保持 </summary>
-    public GameObject[,] highlightCells = new GameObject[BOARD_SIZE, BOARD_SIZE];
+    public GameObject[,]stoneData = new GameObject[BOARD_SIZE, BOARD_SIZE];			 // 盤面に配置された石を保存
+    public GameObject[,] highlightCells = new GameObject[BOARD_SIZE, BOARD_SIZE];	 // ハイライトしたマスを保存
     #endregion
 
     /* ----- ゲーム内処理用変数 ----- */
@@ -34,28 +29,18 @@ public class GameManager : MonoBehaviour
     /// <summary> ターン状態を定義 </summary>
     public enum TurnState
     {
-        /// <summary> 指定なしを表します。 </summary>
-        None,
-        /// <summary> 黒のターン </summary>
-        Black,
-        /// <summary> 白のターン </summary>
-        White
+        None,   // 初期化用
+        Black,	 // 黒のターン
+        White	 // 白のターン
     }
-    /// <summary> 現在のターン状態 </summary>
-    public TurnState currentTurn;
-    /// <summary> プレイヤーがどちらのターンか </summary>
-    public TurnState playerTurn;
-    /// <summary> ターン経過数 </summary>
-    public int turnCount;
-    /// <summary> 黒の石の数 </summary>
-    public int blackStoneCount;
-    /// <summary> 白の石の数 </summary>
-    public int whiteStoneCount;
-    public bool isPassed;
+    public TurnState currentTurn;								 // 現在の手番
+    public TurnState playerTurn;								 // プレイヤーの手番
+    public int blackStoneCount;									 // 盤面上の黒石の数
+    public int whiteStoneCount;									 // 盤面上の白石の数
+    public bool isPassed;										 // 直前の手番がパスしたかのフラグ
     #endregion
 
-    /// <summary> アクセス用インスタンス </summary>
-    public static GameManager Instance { get; private set; }
+    public static GameManager Instance { get; private set; }	// インスタンス
 
     void Awake()
     {
@@ -63,26 +48,24 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            return;
         }
-        else
-        {
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 
 
-    /// <summary> ゲーム内処理で使ったデータを初期化するメソッド </summary>
+    /// <summary> データを初期化するメソッド </summary>
     public void Initialize()
     {
         // 盤面データやターン状態等を初期化
         boardData = (int[,])INITIAL_BOARD_DATA.Clone();
         currentTurn = TurnState.Black;
         playerTurn = TurnState.None;
-        turnCount = 0;
         blackStoneCount = 2;
         whiteStoneCount = 2;
     }
 
+    /// <summary> ハイライトを削除するメソッド </summary>
     public void ResetHighlightCells()
     {
         foreach (GameObject cell in highlightCells)

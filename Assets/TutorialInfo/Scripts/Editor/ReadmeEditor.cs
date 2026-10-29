@@ -6,25 +6,30 @@ using System;
 using System.IO;
 using System.Reflection;
 
+/// <summary>
+/// チュートリアルの表示と関連アセットの削除を管理するクラス
+/// </summary>
 [CustomEditor(typeof(Readme))]
 [InitializeOnLoad]
 public class ReadmeEditor : Editor
 {
-    static string s_ShowedReadmeSessionStateName = "ReadmeEditor.showedReadme";
-    
-    static string s_ReadmeSourceDirectory = "Assets/TutorialInfo";
+    static string s_ShowedReadmeSessionStateName = "ReadmeEditor.showedReadme";	 // 自動表示済みかを記録するセッションキー
 
-    const float k_Space = 16f;
+    static string s_ReadmeSourceDirectory = "Assets/TutorialInfo";				 // チュートリアルのアセット保存先
 
+    const float k_Space = 16f;													 // 表示要素間の余白
+
+    /// <summary> エディター読み込み後のチュートリアル自動選択を登録するメソッド </summary>
     static ReadmeEditor()
     {
         EditorApplication.delayCall += SelectReadmeAutomatically;
     }
 
+    /// <summary> 確認ダイアログで承認されたチュートリアルの関連アセットを削除するメソッド </summary>
     static void RemoveTutorial()
     {
         if (EditorUtility.DisplayDialog("Remove Readme Assets",
-            
+
             $"All contents under {s_ReadmeSourceDirectory} will be removed, are you sure you want to proceed?",
             "Proceed",
             "Cancel"))
@@ -39,10 +44,10 @@ public class ReadmeEditor : Editor
                 Debug.Log($"Could not find the Readme folder at {s_ReadmeSourceDirectory}");
             }
 
-            var readmeAsset = SelectReadme();
+            var readmeAsset = SelectReadme();																 // 削除対象のチュートリアルアセット
             if (readmeAsset != null)
             {
-                var path = AssetDatabase.GetAssetPath(readmeAsset);
+                var path = AssetDatabase.GetAssetPath(readmeAsset);	 // チュートリアルアセットのパス
                 FileUtil.DeleteFileOrDirectory(path + ".meta");
                 FileUtil.DeleteFileOrDirectory(path);
             }
@@ -51,11 +56,12 @@ public class ReadmeEditor : Editor
         }
     }
 
+    /// <summary> セッションで初めてチュートリアルを選択してレイアウトを読み込むメソッド </summary>
     static void SelectReadmeAutomatically()
     {
         if (!SessionState.GetBool(s_ShowedReadmeSessionStateName, false))
         {
-            var readme = SelectReadme();
+            var readme = SelectReadme();																	 // 表示対象のチュートリアルアセット
             SessionState.SetBool(s_ShowedReadmeSessionStateName, true);
 
             if (readme && !readme.loadedLayout)
@@ -66,20 +72,23 @@ public class ReadmeEditor : Editor
         }
     }
 
+    /// <summary> チュートリアル用のエディターレイアウトを読み込むメソッド </summary>
     static void LoadLayout()
     {
-        var assembly = typeof(EditorApplication).Assembly;
-        var windowLayoutType = assembly.GetType("UnityEditor.WindowLayout", true);
-        var method = windowLayoutType.GetMethod("LoadWindowLayout", BindingFlags.Public | BindingFlags.Static);
+        var assembly = typeof(EditorApplication).Assembly;														 // Unityエディターのアセンブリ
+        var windowLayoutType = assembly.GetType("UnityEditor.WindowLayout", true);								 // レイアウト読み込みを提供する型
+        var method = windowLayoutType.GetMethod("LoadWindowLayout", BindingFlags.Public | BindingFlags.Static);	 // レイアウト読み込み用のメソッド情報
         method.Invoke(null, new object[] { Path.Combine(Application.dataPath, "TutorialInfo/Layout.wlt"), false });
     }
 
+    /// <summary> チュートリアルのアセットを検索して選択するメソッド </summary>
+    /// <returns> 一つだけ見つかったReadmeアセット、特定できない場合はnull </returns>
     static Readme SelectReadme()
     {
-        var ids = AssetDatabase.FindAssets("Readme t:Readme");
+        var ids = AssetDatabase.FindAssets("Readme t:Readme");													 // 検索で見つかったReadmeアセットのGUID一覧
         if (ids.Length == 1)
         {
-            var readmeObject = AssetDatabase.LoadMainAssetAtPath(AssetDatabase.GUIDToAssetPath(ids[0]));
+            var readmeObject = AssetDatabase.LoadMainAssetAtPath(AssetDatabase.GUIDToAssetPath(ids[0]));	 // 検索で特定したチュートリアルアセット
 
             Selection.objects = new UnityEngine.Object[] { readmeObject };
 
@@ -92,12 +101,13 @@ public class ReadmeEditor : Editor
         }
     }
 
+    /// <summary> チュートリアルのアイコンとタイトルを描画するメソッド </summary>
     protected override void OnHeaderGUI()
     {
-        var readme = (Readme)target;
+        var readme = (Readme)target;																			 // 表示対象のチュートリアルアセット
         Init();
 
-        var iconWidth = Mathf.Min(EditorGUIUtility.currentViewWidth / 3f - 20f, 128f);
+        var iconWidth = Mathf.Min(EditorGUIUtility.currentViewWidth / 3f - 20f, 128f);							 // 表示するアイコンの幅
 
         GUILayout.BeginHorizontal("In BigTitle");
         {
@@ -120,12 +130,13 @@ public class ReadmeEditor : Editor
         GUILayout.EndHorizontal();
     }
 
+    /// <summary> チュートリアルの本文とリンクと削除ボタンを描画するメソッド </summary>
     public override void OnInspectorGUI()
     {
-        var readme = (Readme)target;
+        var readme = (Readme)target;																			 // 表示対象のチュートリアルアセット
         Init();
 
-        foreach (var section in readme.sections)
+        foreach (var section in readme.sections)																 // undefined
         {
             if (!string.IsNullOrEmpty(section.heading))
             {
@@ -154,7 +165,7 @@ public class ReadmeEditor : Editor
         }
     }
 
-    bool m_Initialized;
+    bool m_Initialized;															 // 表示スタイルを初期化済みか
 
     GUIStyle LinkStyle
     {
@@ -162,7 +173,7 @@ public class ReadmeEditor : Editor
     }
 
     [SerializeField]
-    GUIStyle m_LinkStyle;
+    GUIStyle m_LinkStyle;														 // リンクの表示スタイル
 
     GUIStyle TitleStyle
     {
@@ -170,7 +181,7 @@ public class ReadmeEditor : Editor
     }
 
     [SerializeField]
-    GUIStyle m_TitleStyle;
+    GUIStyle m_TitleStyle;														 // タイトルの表示スタイル
 
     GUIStyle HeadingStyle
     {
@@ -178,7 +189,7 @@ public class ReadmeEditor : Editor
     }
 
     [SerializeField]
-    GUIStyle m_HeadingStyle;
+    GUIStyle m_HeadingStyle;													 // 見出しの表示スタイル
 
     GUIStyle BodyStyle
     {
@@ -186,7 +197,7 @@ public class ReadmeEditor : Editor
     }
 
     [SerializeField]
-    GUIStyle m_BodyStyle;
+    GUIStyle m_BodyStyle;														 // 本文の表示スタイル
 
     GUIStyle ButtonStyle
     {
@@ -194,8 +205,9 @@ public class ReadmeEditor : Editor
     }
 
     [SerializeField]
-    GUIStyle m_ButtonStyle;
+    GUIStyle m_ButtonStyle;														 // 削除ボタンの表示スタイル
 
+    /// <summary> チュートリアルの表示スタイルを初期化するメソッド </summary>
     void Init()
     {
         if (m_Initialized)
@@ -215,7 +227,7 @@ public class ReadmeEditor : Editor
         m_LinkStyle = new GUIStyle(m_BodyStyle);
         m_LinkStyle.wordWrap = false;
 
-        // Match selection color which works nicely for both light and dark skins
+        // 明暗どちらのエディターテーマでも見やすい選択色を使用する
         m_LinkStyle.normal.textColor = new Color(0x00 / 255f, 0x78 / 255f, 0xDA / 255f, 1f);
         m_LinkStyle.stretchWidth = false;
 
@@ -225,9 +237,13 @@ public class ReadmeEditor : Editor
         m_Initialized = true;
     }
 
+    /// <summary> 下線付きのリンクを描画してクリックを検出するメソッド </summary>
+    /// <param name="label"> リンクに表示する内容 </param>
+    /// <param name="options"> リンクのレイアウト指定 </param>
+    /// <returns> リンクがクリックされた場合はtrue、それ以外はfalse </returns>
     bool LinkLabel(GUIContent label, params GUILayoutOption[] options)
     {
-        var position = GUILayoutUtility.GetRect(label, LinkStyle, options);
+        var position = GUILayoutUtility.GetRect(label, LinkStyle, options);										 // リンクを描画する矩形領域
 
         Handles.BeginGUI();
         Handles.color = LinkStyle.normal.textColor;

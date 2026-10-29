@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 
 /// <summary>
-/// ゲーム開始時に先行後攻を決定するクラス
+/// 先手と後手を決定するクラス
 /// </summary>
 public class TurnSelectionState : GameStateBase
 {
     public override void Enter()
     {
-        // 一旦ランダムで先行後攻を決定
-        int rand = Random.Range(1, 3);
+        // プレイヤーの先手と後手をランダムに決定する
+        StoneManager.StoneType rand = (StoneManager.StoneType)Random.Range((int)StoneManager.StoneType.Black, (int)StoneManager.StoneType.White + 1);	 
         GameManager.Instance.playerTurn = (GameManager.TurnState)rand;
 
         manager.ChangeState(new PlaceableCellCheckState());

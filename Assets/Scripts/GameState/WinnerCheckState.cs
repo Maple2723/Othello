@@ -3,12 +3,15 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// 勝ち負けの判定を行うクラス
+/// 勝敗判定と再開始の入力を処理するクラス
 /// </summary>
 public class WinnerCheckState : GameStateBase
 {
     public override void Enter()
     {
+
+        // 石の数によって勝敗を決める
+        // 仮仕様：コンソール上で表示
         int blackCount = GameManager.Instance.blackStoneCount;
         int whiteCount = GameManager.Instance.whiteStoneCount;
         if (blackCount > whiteCount)
@@ -27,12 +30,15 @@ public class WinnerCheckState : GameStateBase
 
     public override void Update()
     {
+
+        // 仮仕様：右クリックしたら初期化して再度プレイ
         if (Mouse.current.rightButton.wasPressedThisFrame)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
+    /// <summary> 状態を終了するメソッド </summary>
     public override void Exit()
     {
 

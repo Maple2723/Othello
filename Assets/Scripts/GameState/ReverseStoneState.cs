@@ -1,38 +1,34 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// 置かれたマスを参照して裏返し処理を行うクラス
+/// 配置した石で挟んだ相手の石を反転するクラス
 /// </summary>
 public class ReverseStoneState : GameStateBase
 {
-    Vector2Int putPosition;
-    public ReverseStoneState(Vector2Int _putPosition)
-    {
-        putPosition = _putPosition;
-    }
+    Vector2Int putPosition;	 // 配置した盤面座標
+
+    /// <summary> 配置した石の座標を受けとるメソッド </summary>
+    /// <param name="_putPosition"> 配置した盤面座標 </param>
+    public ReverseStoneState(Vector2Int _putPosition) => putPosition = _putPosition;
 
     public override void Enter()
     {
-
-        // 変数のコピー
         int[,] boardData = GameManager.Instance.boardData;
         int boardSize = GameManager.BOARD_SIZE;
 
         // 自分の色と相手の石の色を取得
-        int thisStone = boardData[putPosition.x, putPosition.y];
-        int opponentStone = thisStone == 1 ? 2 : 1;
+        int myStone = boardData[putPosition.x, putPosition.y];
+        int opponentStone = myStone == (int)StoneManager.StoneType.Black ? (int)StoneManager.StoneType.White : (int)StoneManager.StoneType.Black;
 
-        // 8方向を探索
-        for (int dx = -1; dx <= 1; dx++)
+        // 全方向を探索
+        for (int x = -1; x <= 1; x++)
         {
-            for (int dy = -1; dy <= 1; dy++)
+            for (int y = -1; y <= 1; y++)
             {
-                if (dx == 0 && dy == 0)
-                    continue;
+                if (x == 0 && y == 0) continue;
 
-                int nextX = putPosition.x + dx;
-                int nextY = putPosition.y + dy;
+                int nextX = putPosition.x + x;
+                int nextY = putPosition.y + y;
 
                 // 隣接マスに相手の石がなければ次の方向へ
                 if (nextX < 0 || nextX >= boardSize || nextY < 0 || nextY >= boardSize || boardData[nextX, nextY] != opponentStone)
@@ -41,30 +37,30 @@ public class ReverseStoneState : GameStateBase
                 // 相手の石が続く間、次のマスを調べる
                 while (nextX >= 0 && nextX < boardSize && nextY >= 0 && nextY < boardSize && boardData[nextX, nextY] == opponentStone)
                 {
-                    nextX += dx;
-                    nextY += dy;
+                    nextX += x;
+                    nextY += y;
                 }
 
-                // その先に自分の石があれば、間の石を裏返せる
-                if (nextX < 0 || nextX >= boardSize || nextY < 0 || nextY >= boardSize || boardData[nextX, nextY] != thisStone)
+                // その先に自分の石が無ければ次の方向へ
+                if (nextX < 0 || nextX >= boardSize || nextY < 0 || nextY >= boardSize || boardData[nextX, nextY] != myStone)
                     continue;
 
-                // 裏返せる石の座標を表示
-                int flipX = putPosition.x + dx;
-                int flipY = putPosition.y + dy;
+                int flipX = putPosition.x + x;	 // 裏返す石の盤面X座標
+                int flipY = putPosition.y + y;	 // 裏返す石の盤面Y座標
 
+                // 裏返す
                 while (boardData[flipX, flipY] == opponentStone)
                 {
                     StoneManager.Instance.FlipStone(new Vector2Int(flipX, flipY));
 
-                    flipX += dx;
-                    flipY += dy;
+                    flipX += x;
+                    flipY += y;
                 }
             }
         }
 
         // ターンを切り替える
-        GameManager.Instance.currentTurn = (GameManager.TurnState)(thisStone == 1 ? 2 : 1);
+        GameManager.Instance.currentTurn = (GameManager.TurnState)(myStone == 1 ? 2 : 1);
         manager.ChangeState(new StoneCountState());
     }
 
