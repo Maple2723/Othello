@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// ゲームのステートを管理するクラス
+/// </summary>
 public class GameStateManager : MonoBehaviour
 {
-    private GameStateBase currentState;
+    private GameStateBase currentState;	 // 現在実行しているゲームの状態
     void Start()
     {
         ChangeState(new BoardInitializationState());

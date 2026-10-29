@@ -2,17 +2,21 @@ using Cysharp.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// 石の個数と手番の表示を管理するクラス
+/// </summary>
 public class UiManager : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI blackCountText;
-    [SerializeField] private TextMeshProUGUI whiteCountText;
-    [SerializeField] private TextMeshProUGUI turnText;
-    [SerializeField] private TextMeshProUGUI passText;
+    [SerializeField] private TextMeshProUGUI blackCountText;	 // 黒い石の個数を表示
+    [SerializeField] private TextMeshProUGUI whiteCountText;	 // 白い石の個数を表示
+    [SerializeField] private TextMeshProUGUI turnText;			 // 現在の手番の表示
+    [SerializeField] private TextMeshProUGUI passText;			 // パス通知の表示
 
-    public static UiManager Instance { get; private set; }
+    public static UiManager Instance { get; private set; }		 // インスタンス
     void Awake()
     {
-        if(Instance == null)
+        // シングルトン作成
+        if (Instance == null)
         {
             Instance = this;
             return;
@@ -20,10 +24,11 @@ public class UiManager : MonoBehaviour
         Destroy(gameObject);
     }
 
+    /// <summary> プレイヤーとNPCの石の色と個数を表示するメソッド </summary>
     public void UpdateStoneCountText()
     {
-        string blackText = "";
-        string whiteText = "";
+        string blackText = "";			 // 黒い石の担当を含む表示文字列
+        string whiteText = "";			 // 白い石の担当を含む表示文字列
 
 
         blackText = "<color=black><size=200%>●</size></color>";
@@ -44,10 +49,11 @@ public class UiManager : MonoBehaviour
         whiteCountText.text = $"{whiteText}<size=130%>{GameManager.Instance.whiteStoneCount}</size>";
     }
 
+    /// <summary> 現在の手番と石の色を表示するメソッド </summary>
     public void UpdateTurnText()
     {
-        string enemyTurnColor = "";
-        string playerTurnColor = "";
+        string enemyTurnColor = "";		 // NPCの石の色を示す表示文字列
+        string playerTurnColor = "";	 // プレイヤーの石の色を示す表示文字列
 
         if (GameManager.Instance.playerTurn == GameManager.TurnState.Black)
         {
@@ -68,14 +74,15 @@ public class UiManager : MonoBehaviour
         {
             turnText.text = enemyTurnColor + "<size=120%>NPC turn</size>";
         }
-        
+
     }
 
+    /// <summary> パスの通知を一定時間表示するメソッド </summary>
     public async UniTaskVoid ShowPassTextAsync()
     {
         passText.text = "Pass";
 
-        await UniTask.Delay(500);
+        await UniTask.Delay(750);
 
         passText.text = "";
     }

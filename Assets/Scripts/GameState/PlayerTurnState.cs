@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 /// <summary>
-/// プレイヤーの置くマスを決めるクラス
+/// プレイヤーの入力に応じて石を配置するクラス
 /// </summary>
 public class PlayerTurnState : GameStateBase
 {
@@ -10,9 +10,16 @@ public class PlayerTurnState : GameStateBase
     {
 
     }
+    public override void Exit()
+    {
+        GameManager.Instance.ResetHighlightCells();
+        StoneManager.Instance.DestroyNpcHighlightCell();
+        Object.Destroy(StoneManager.Instance.npcHighlightCell);
+    }
 
     public override void Update()
     {
+        // クリックしたマスに石を生成
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
@@ -27,10 +34,5 @@ public class PlayerTurnState : GameStateBase
                 manager.ChangeState(new ReverseStoneState(new Vector2Int(x, y)));
             }
         }
-    }
-    public override void Exit()
-    {
-        GameManager.Instance.ResetHighlightCells();
-        StoneManager.Instance.DestroyNpcHighlightCell();
     }
 }

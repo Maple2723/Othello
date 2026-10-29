@@ -1,27 +1,32 @@
 using UnityEngine;
 
+/// <summary>
+/// 石のアニメーションを制御するクラス
+/// </summary>
 public class StoneController : MonoBehaviour
 {
-    [SerializeField] private Animator animator;
+    [SerializeField] private Animator animator;	 // アニメーター
 
-    public void Initialize(StoneManager.StoneType type)
+    /// <summary> 設置アニメーションを再生するメソッド </summary>
+    /// <param name="_type"> 配置する石の色 </param>
+    public void Initialize(StoneManager.StoneType _type)
     {
-        Play(type == StoneManager.StoneType.Black ? "PutBlack" : "PutWhite");
+        Play(_type == StoneManager.StoneType.Black ? "PutBlack" : "PutWhite");
     }
 
-    public void FlipStone(int currentStoneData)
+    /// <summary> 反転アニメーションを再生するメソッド </summary>
+    /// <param name="_stoneColor"> 反転前の石の色 </param>
+    public void FlipStone(StoneManager.StoneType _stoneColor)
     {
-        Play(currentStoneData == (int)StoneManager.StoneType.Black ? "FlipToWhite" : "FlipToBlack");
+        Play(_stoneColor == StoneManager.StoneType.Black ? "FlipToWhite" : "FlipToBlack");
     }
 
+    /// <summary> 指定したアニメーションを再生するメソッド </summary>
+    /// <param name="stateName"> 再生するアニメーション </param>
     private void Play(string stateName)
     {
-        if (animator == null)
-        {
-            Debug.LogError("Stone Animator is missing. Run Tools/Othello/Create Stone Animations.", this);
-            return;
-        }
-        animator.Play(stateName, 0, 0f);
-        animator.Update(0f);
+        if (animator == null) return;
+
+        animator.Play(stateName);
     }
 }
